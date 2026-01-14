@@ -1,0 +1,78 @@
+$primary-color: #000000; 
+$secondary-color : #053553;
+$color-2 : #ffffff;
+$color-3: #333333;
+$color-3 : #60a5fa;
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin : 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: $primary-color;
+}
+.login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+
+    .card{
+        background: $secondary-color ;
+        padding: 30px;
+        width: 400px;
+        border-radius: 12px;
+        text-align: center;
+    }
+    h2{
+        color : $color-2;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    input{
+        width : 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        border: none;
+        background: $color-2;
+        color : $color-3;
+    }
+    .btn{
+        width : 50%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        background: $color-2;
+        color :$secondary-color;
+        font-weight: bold;
+    }
+    .forgot{
+        color:  $color-3;
+        margin: 15px;
+        cursor: pointer;
+        font-size: 0.9rem;
+    }
+    .socials{
+        display: flex;
+        flex-direction: row;
+        gap : 10px;
+
+        button{
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid $color-2;
+            background: transparent;
+            color:  $color-2;
+            cursor: pointer;
+            flex : 1;
+
+            &:hover{
+                background: $color-3;
+            }
+        }
+    }
+}
