@@ -26,6 +26,25 @@ body{
         border-radius: 12px;
         text-align: center;
     }
+    .divider {
+        display: flex;
+        align-items: center; // Vertically aligns the lines with the text
+        margin: 30px 0;      // Adds space above and below the line
+        width: 100%;
+
+        .line {
+            height: 1px;
+            flex: 1;         // MAGIC: Makes the line stretch to fill space
+            background-color: rgba(255, 255, 255, 0.3); // Subtle semi-transparent white
+        }
+
+        .text {
+            padding: 0 10px; // Adds breathing room around "OR"
+            color: $color-2; // Uses your white variable
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    }
     h2{
         color : $color-2;
         margin-bottom: 20px;
@@ -41,7 +60,7 @@ body{
         color : $color-3;
     }
     .btn{
-        width : 50%;
+        width : 100%;
         padding: 12px;
         margin-bottom: 15px;
         border-radius: 8px;
