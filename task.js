@@ -14,7 +14,7 @@ function registerUser(name, password) {
     this.password = password;
     console.log(`this after func exec `, this);
 }  
-const user1 = new  registerUser('pusharma', '12345');
+const user1 = new registerUser('pusharma', '12345');
 console.log(user1);
 
 
@@ -27,3 +27,9 @@ const registerUserArrow = (name, password) => {
 }
 const user2 =   registerUserArrow('pusharma', '12345');
 console.log(user2);
+
+
+const mult = (a, b) => {
+    return a * b;
+}
+console.log (mult(2, 3));
